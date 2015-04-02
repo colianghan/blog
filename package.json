@@ -1,0 +1,23 @@
+{
+  "name": "colinBlog",
+  "version": "0.1.0",
+  "description": "my blog theme",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.2",
+    "gulp-watch": "^4.2.2"
+  },
+  "devDependencies": {
+    "gulp-minify-css": "^1.0.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "ghost",
+    "blog"
+  ],
+  "author": "colin (colinhanks@colinhanks.me)",
+  "license": "ISC"
+}
