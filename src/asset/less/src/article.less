@@ -1,0 +1,35 @@
+.article{
+	margin-top: 20px;
+	background: #fff;
+	padding: 20px;
+	overflow: hidden;
+	.artice-header{
+		margin-bottom: 20px;
+		h2{
+			a{
+				font-size: 32px;
+				color: @artile-h2-color;
+				transition: color .5s ease-in;
+				&:hover{
+					color:@a-color;
+				}
+			}
+			margin-bottom: 5px;
+		}
+		.article-meta{
+			span{
+				display: inline-block;
+				margin-right: 20px;
+			}
+			a{
+				color:@a-color;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	p{
+		margin: 12px 0;
+	}
+}

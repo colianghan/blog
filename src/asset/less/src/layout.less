@@ -1,0 +1,42 @@
+//屏幕960px 居中显示
+.inner{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	.content:extend(.pull-left){
+		width: @main-content-left-width;
+	}
+	.siderbar-container:extend(.pull-right){
+		width: @main-content-right-width;
+	}
+}
+
+//左浮动
+.pull-left{
+	float: left;
+}
+
+//右浮动
+.pull-right{
+	float:right;
+}
+
+//display: inline-block
+.inline-block{
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+//text-align: center
+.text-center{
+	text-align:center; 
+}
+
+
+//主要内容布局
+.wrapper{
+	background:@content-bg;
+	padding-bottom: 40px;
+}

@@ -1,0 +1,31 @@
+.paging-navigation:extend(.text-center){
+	margin: 40px 0;
+	.nav-links{
+		width: 100%;
+		line-height: 1;
+	}
+	li{
+		display: inline-block;
+		a{
+			display: inline-block;
+			padding: 10px 15px;
+			font-size: 22px;
+			background-color: @a-color;
+			color:#fff;
+			&:hover{
+				background-color: lighten(@a-color, 10%);
+			}
+		}
+		&.more:extend(&.active){
+			cursor: text;
+		}
+		&.active a{
+			background-color: lighten(@a-color, 10%);
+		}
+	}
+}
+
+.screen-reader-text{
+	position:absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}

@@ -1,0 +1,30 @@
+.btn:extend(.inline-block){
+	padding: 10px 15px;
+	border: 1px solid transparent;
+
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 1.5;
+
+	text-align: center;
+	vertical-align: middle;
+	//touch-action
+	-ms-touch-action: manipulation;
+  	touch-action: manipulation;
+  	white-space: none;
+  	background-image: none;
+  	//user-select 
+  	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &.btn-warning{
+    	color:#fff;
+    	background-color: @btn-warning-background;
+    	border-color: @btn-warning-background;
+    	&:active,&:hover,&:focus{
+    		background-color: @btn-warning-background-hover;
+    		border-color: @btn-warning-background-hover;
+    	}
+    }
+}

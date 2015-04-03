@@ -25,7 +25,7 @@ gulp.task('less',function(){
 });
 
 
-gulp.task('default',['server'],function(){
+gulp.task('default',['less','server'],function(){
 	gulp.watch('src/asset/less/**/*.less',['less',reload]);
 	gulp.watch('src/*.html',[reload]);
 });

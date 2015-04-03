@@ -1,15 +1,18 @@
 pre,textarea{overflow:auto}
 body,h3{font-size:1.4rem}
 *,input[type=search]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.inner,sub,sup{position:relative}
+.btn,.logo,.navbar,.paging-navigation,.text-center{text-align:center}
 .clearfix:after,.clearfix:before{content:"";display:table}
 .clearfix:after{clear:both}
 body,html{height:100%}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:62.5%}
-body{margin:0;line-height:1.5;color:#333;background:#5a5a5a}
+body{margin:0;line-height:1.5;color:#333;background-color:#fff}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
 audio:not([controls]){display:none;height:0}
 [hidden],template{display:none}
+.btn,.inline-block,.logo a{display:inline-block}
 a{background:0 0;text-decoration:none;-webkit-tap-highlight-color:transparent;color:#08c}
 a:active{outline:0;color:#069}
 abbr[title]{border-bottom:1px dotted}
@@ -17,7 +20,7 @@ b,optgroup,strong{font-weight:700}
 dfn{font-style:italic}
 mark{background:#ff0;color:#000}
 small{font-size:80%}
-sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub,sup{font-size:75%;line-height:0;vertical-align:baseline}
 sup{top:-.5em}
 sub{bottom:-.25em}
 img{border:0;vertical-align:middle}
@@ -39,6 +42,7 @@ input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-sea
 fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
 legend{border:0;padding:0}
 textarea{resize:vertical}
+.article,.inner{overflow:hidden}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button,html,input,select,textarea{font-family:"Helvetica Neue",Helvetica,STHeiTi,Arial,sans-serif}
@@ -56,3 +60,33 @@ input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#ccc}
  * author colin(韩国梁)
  * theme angel
  */
+.inner{width:960px;margin:0 auto}
+.inner .content{width:620px}
+.inner .siderbar-container{width:320px}
+.inner .content,.pull-left{float:left}
+.inner .siderbar-container,.pull-right{float:right}
+.wrapper{background:#ecf0f1;padding-bottom:40px}
+.logo{margin:18px 0 5px;font-size:48px}
+.logo a{background:url(../img/myName.png);width:240px;height:81px;line-height:81px;text-indent:-1999px}
+.navbar .navbar-ul li{display:inline-block;vertical-align:top}
+.navbar .navbar-ul li a:hover,.navbar .navbar-ul li.active a{color:#2c3e50}
+.navbar .navbar-ul li.active{font-weight:bolder}
+.navbar .navbar-ul li a{padding:10px 20px;display:block;color:#18bc9c;font-size:24px;transition:color .5s ease-in}
+.article{margin-top:20px;background:#fff;padding:20px}
+.article .artice-header{margin-bottom:20px}
+.article .artice-header h2{margin-bottom:5px}
+.article .artice-header h2 a{font-size:32px;color:#141412;transition:color .5s ease-in}
+.article .artice-header .article-meta a,.article .artice-header h2 a:hover{color:#18bc9c}
+.article .artice-header .article-meta span{display:inline-block;margin-right:20px}
+.article .artice-header .article-meta a:hover{text-decoration:underline}
+.article p{margin:12px 0}
+.btn{padding:10px 15px;border:1px solid transparent;font-weight:400;font-size:15px;line-height:1.5;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;white-space:none;background-image:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.btn.btn-warning{color:#fff;background-color:#f39c12;border-color:#f39c12}
+.btn.btn-warning:active,.btn.btn-warning:focus,.btn.btn-warning:hover{background-color:#c87f0a;border-color:#c87f0a}
+.paging-navigation{margin:40px 0}
+.paging-navigation .nav-links{width:100%;line-height:1}
+.paging-navigation li{display:inline-block}
+.paging-navigation li a{display:inline-block;padding:10px 15px;font-size:22px;background-color:#18bc9c;color:#fff}
+.paging-navigation li a:hover,.paging-navigation li.active a{background-color:#24e3be}
+.paging-navigation li.more{cursor:text}
+.screen-reader-text{position:absolute!important;clip:rect(1px,1px,1px,1px)}

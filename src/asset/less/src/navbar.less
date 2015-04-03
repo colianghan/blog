@@ -1,0 +1,21 @@
+.navbar:extend(.text-center){
+	.navbar-ul{
+		& li{
+			display: inline-block;
+			vertical-align: top;
+			&.active a,& a:hover{
+				color:@a-nav-hover;
+			}
+			&.active{
+				font-weight: bolder;
+			}
+			a{
+				padding: 10px 20px;
+				display: block;
+				color:@a-color;
+				font-size: 24px;
+				transition: color .5s ease-in;
+			}
+		}
+	}
+}
