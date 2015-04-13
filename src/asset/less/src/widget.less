@@ -1,0 +1,49 @@
+/*
+ * widget-area > .widget > .widget-title + ul>li>a
+ */
+.widget-area{
+	background: transparent;
+	.widget{
+		background: #fff;
+		margin-top: 20px;
+		.widget-title{
+			font-size: 18px;
+			padding: 5px 0;
+			text-indent: 20px;
+			border-bottom: 1px solid #ECF0F1;
+		}
+		ul{
+			padding: 10px 20px;
+			li{
+				padding: 5px 0;
+				a{
+					display: block;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow:ellipsis;
+					color:lighten(#000, 30%);
+					&:hover{
+						color:#000;
+					}
+				}
+			}
+		}
+		.tags-cloud{
+			overflow: hidden;
+			li{
+				.pull-left();
+				margin-right: 5px;
+			}
+			a{
+				border: 1px solid #ededed;
+				padding: 5px 10px;
+			}
+		}
+		.friendly-link{
+			a{
+				border: none;
+				padding-left: 0;
+			}
+		}
+	}
+}
