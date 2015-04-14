@@ -92,7 +92,7 @@ input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#ccc}
 .paging-navigation li{display:inline-block}
 .paging-navigation li a{display:inline-block;padding:10px 15px;font-size:22px;background-color:#18bc9c;color:#fff}
 .paging-navigation li a:hover{background-color:#24e3be}
-.paging-navigation li.active a{background-color:#24e3be;cursor:pointer}
+.paging-navigation li.active a{background-color:#24e3be;cursor:text}
 .screen-reader-text{position:absolute!important;clip:rect(1px,1px,1px,1px)}
 .widget-area{background:0 0}
 .widget-area .widget{background:#fff;margin-top:20px}
