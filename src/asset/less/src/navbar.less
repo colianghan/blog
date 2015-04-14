@@ -1,5 +1,11 @@
 .navbar:extend(.text-center){
 	background: @nav-color;
+	-webkit-box-shadow:0px 1px 3px;
+	-moz-box-shadow:0px 1px 3px;
+	-ms-box-shadow:0px 1px 3px;
+	-o-box-shadow:0px 1px 3px;
+	box-shadow: 0px 1px 3px;
+	position: relative;
 	.navbar-ul{
 		& li{
 			display: inline-block;
@@ -13,9 +19,9 @@
 			a{
 				padding: 10px 20px;
 				display: block;
-				color:@a-color;
+				color:#fff;
 				font-size: 24px;
-				transition: color .5s ease-in;
+				transition: color 200ms ease-in;
 			}
 		}
 	}
