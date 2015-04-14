@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>colin's blog | 韩国梁 | 为full-stack而奋战</title>
+	<link rel="stylesheet" type="text/css" href="asset/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/index.css" />
+	<link rel="icon" type="image/x-icon" href="asset/img/logo.png" />
+</head>
+<body>	
+	<header class="header" role="banner">
+		<h1 class="logo">
+			<a href="http://www.colinhanks.me/" title="韩国梁">韩国梁</a>
+		</h1>
+		<nav class="navbar">
+			<ul class="navbar-ul">
+				<li><a href="/" title="">Home</a></li>
+				<li><a href="" title="">CSS</a></li>
+				<li><a href="" title="">JS</a></li>
+				<li><a href="" title="">MV*</a></li>
+				<li><a href="" title="">nodeJS</a></li>
+				<li><a href="" title="">Demo</a></li>
+				<li><a href="" title="">About me</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="wrapper">
+		<div class="inner">
+			<div role="main">
+				<article class="article">
+					<header class="artice-header">
+						<h2>
+							<a href="" title="[Task Master] gulp-lint">[Task Master] gulp-lint</a>
+						</h2>
+						<div class="article-meta">
+							<span><a href="" title="糖拌西红柿"><i class="fa fa-user fa-fw"></i>糖拌西红柿</a></span>
+							<span><a href="" title="2015-3-1"><i class="fa fa-calendar fa-fw"></i>2015-3-1</a></span>
+							<span><a href="" title="javascript"><i class="fa fa-tags fa-fw"></i>javascript</a></span>
+							<span><a href="" title="4条评论"><i class="fa fa-comment fa-fw"></i>4条评论</a></span>
+						</div>
+					</header>
+					<div class="article-summary">
+						<h3>前沿：</h3>
+						<p>最近在前端观察看见了这篇老文章，看见了元素居中的5种办法，其中提到了display:table-cell这个css显示的新属性，按照当时的浏览器市场来说想必兼容性会是糟糕的一比，但是现在这坛老酒其实可以用到移动端来。
+
+						<p>在PC端，应该很少用到 display:table-cell 这个属性，究其原因在于兼容性【IE8+以及现代浏览器才支持】，或者说很少去关注这个标签。此标签的用处就是垂直居中布局功能，这个功能可以让我们不用依赖 margin:0 auto 属性达到居中的目的，并且 margin 外边距还达不到 table-cell 的效果。</p>
+						<h3>元素居中</h3>
+						<p>让一个块级元素居中，我们都想到了 <code>margin:0 auto</code> 属性，一般的最外层的布局经常看见这属性，但是这样的居中只是把元素整体居中，元素中的内容依然按照正常流来排列，从左上角到右下角。但是这样并达不到我们需要的效果，我们需要的效果是不管元素里面的内容有多少，还是添加新内容都是垂直居中于元素。</p>
+						<p>关于垂直居中的办法，用的最多应该 position + margin 负值的办法达到居中的效果</p>
+						<pre class="css">
+.test{
+		height: 400px;
+		position: absolute;
+		top:50%;
+		margin-top: -200px;
+		background-color: #ccc;
+	}
+						</pre>
+						<p>兼容性很好，但是必须先要确定元素的高度，并且假如包含块的高度容不下元素的内容，那么此时就要用 <code>overflow</code> 来处理，假如这个包含块是有背景颜色的，那么就会这样<br>
+<img src="http://img.xiaoho.com/2015/01/20150129134319.png" alt="韩寒最近在干嘛~~"><br>
+红色框框中的小渣渣被偷窥地一览无遗，显然这是我们不想看到的，好好的穿着一件裤子，结果裤裆一直处于风口状态，呵呵。</p>
+					</div>
+					<footer class="article-page-wrapper">
+						<a href="#" class="prev"><i class="fa fa-angle-double-left fa-fw"></i>上一篇<span class="preTitle">爱的供养</span></a>
+						<a href="#" class="next">下一篇<span class="nextTitle">这就是爱</span><i class="fa fa-angle-double-right fa-fw"></i></a>
+					</footer>
+				</article>
+			</div>
+			<div role="complementary">
+				<div class="sidebar-inner">
+					<div class="widget-area">
+						<div class="widget widget-myself-detail widget-myself">
+							<aside>
+								<h3 class="widget-title">作者名片</h3>
+								<div class="info-container">
+									<div class="info">
+										<dl><dt><strong>姓名:</strong></dt><dd>韩国梁（colin）</dd></dl>
+										<dl><dt><strong>职业:</strong></dt><dd>中级web前端开发工程师</dd></dl>
+										<dl><dt><strong>爱好:</strong></dt><dd>读书、听歌、追番</dd></dl>
+										<dl><dt></dt><dd><strong>简介:</strong>伪全栈工程师，对原生js、js mv*框架、node、.net有较深入的研究</dd></dl>
+										<dl><dt><strong>邮箱:</strong></dt><dd><a href="mailto:admin@colinhanks.me">admin@colinhanks.me</a></dd></dl>
+									</div>
+									<img src="asset/img/photo.jpg" class="photo"/>
+								</div>
+							</aside>
+						</div>
+						<div class="widget-area-detail">
+							<div class="widget widget-1">
+								<aside>
+									<h3 class="widget-title">热门文章</h3>
+									<ul>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+									</ul>
+								</aside>
+							</div>
+							<div class="widget widget-2">
+								<aside>
+									<h3 class="widget-title">标签云</h3>
+									<ul class="tags-cloud">
+										<li><a href="" title="">js</a></li>
+										<li><a href="" title="">css</a></li>
+										<li><a href="" title="">node</a></li>
+										<li><a href="" title="">.net</a></li>
+										<li><a href="" title="">rail</a></li>
+										<li><a href="" title="">jquery</a></li>
+										<li><a href="" title="">seo</a></li>
+									</ul>
+								</aside>
+							</div>
+							<div class="widget widget-3">
+								<aside>
+									<h3 class="widget-title">最近发表</h3>
+									<ul>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+										<li><a href="" title="">CSS实现垂直居中的5种方法</a></li>
+									</ul>
+								</aside>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer" role="contentinfo">
+		<div class="footer-copyright">
+			<div class="inner">
+				<p>Powered by <a href="https://ghost.org/" rel="nofollow">Ghost</a>，Host By<a href="http://www.aliyun.com/" target="_blank" rel="nofollow">阿里云</a>, 冀ICP备15006018号-1</p>
+				<p>Copyright © 2015 colin All rights reserved.</p>
+			</div>
+		</div>	
+	</footer>
+</body>
+</html>

@@ -34,4 +34,32 @@
 		margin: 12px 0;
 		font-size: 16px;
 	}
+	/*详情页列表 样式*/
+	h3{
+		font-size: 20px;
+		font-weight: bold;
+	}
+	.article-page-wrapper{
+		margin: 20px 0 20px 0;
+		padding-top: 10px;
+		font-size: 18px;
+		font-weight: bold;
+		border-top: 1px solid #dadada;
+		overflow: hidden;
+		.prev{
+			float: left;
+		}
+		.next{
+			float: right;
+		}
+		.preTitle,.nextTitle{
+			margin-left: 5px;
+		}
+		a{
+			color:lighten(#333, 30%);
+			&:hover{
+				color:#333;
+			}
+		}
+	}
 }
