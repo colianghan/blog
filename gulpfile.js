@@ -20,7 +20,7 @@ gulp.task('server',function(){
 gulp.task('less',function(){
 	gulp.src('src/asset/less/index.less')
 		.pipe(less())
-		.pipe(minifyCss({keepBreaks:true}))
+		.pipe(minifyCss({keepBreaks:false}))
 		.pipe(gulp.dest('src/asset/css'))
 });
 
